@@ -12,6 +12,9 @@ app.config['SECRET_KEY'] = os.getenv("FLASK_KEY")
 def hello_world():
     return f"<h1>Behold, I am {random_name('superhero')}!</h1>"
 
+def login():
+    return F"<h1>Login Page</h1>"
+
 
 if __name__ == "__main__":
     app.run(debug=True, port=5000)
